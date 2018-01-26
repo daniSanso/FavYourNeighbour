@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.danielsanso.favyourneighbour12.ProfileActivity"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/profile_background"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/backid"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="3dp"
+                android:drawableLeft="@drawable/ic_arrow_back"
+                android:textColor="@color/colorAccent" />
+
+
+        </LinearLayout>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="100dp"
+            app:cardCornerRadius="40dp"
+            app:cardElevation="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="60dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/textViewNombre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Maria Pombo"
+                    android:textColor="@color/textColorSecundary"
+
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewPiso"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:text="Bloque 3, Piso:4A"
+                    android:textColor="@color/textColorSecundary" />
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="180dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="15dp"
+                    android:elevation="7dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="57dp"
+                            android:layout_height="20dp"
+                            android:layout_marginLeft="23dp"
+                            android:layout_marginTop="7dp"
+                            android:drawableLeft="@drawable/ic_thumb_up"
+                            android:text="Like" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+
+                            android:layout_height="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="7dp"
+                            android:drawableLeft="@drawable/ic_thumb_down"
+                            android:text="Dislike" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <ListView
+                    android:id="@+id/lstDatosComentario"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="9dp"
+                    android:divider="@color/dividerColor"
+                    android:padding="5dp">
+
+                </ListView>
+
+
+            </LinearLayout>
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/floatingActionButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="bottom|end"
+                android:layout_marginBottom="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="85dp"
+                android:backgroundTint="@color/colorAccent"
+                android:clickable="true"
+                app:fabSize="normal"
+                app:srcCompat="@drawable/ic_action_name" />
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="51dp"
+            android:background="@drawable/profile_background"
+            android:clickable="true"
+            app:cardCornerRadius="50dp"
+            app:cardElevation="7dp">
+
+            <ImageView
+                android:id="@+id/idimagen"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="0dp"
+                android:background="@null"
+                android:clickable="true"
+                android:elevation="@dimen/cardview_compat_inset_shadow"
+                android:src="@drawable/profile_img"></ImageView>
+
+
+        </android.support.v7.widget.CardView>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

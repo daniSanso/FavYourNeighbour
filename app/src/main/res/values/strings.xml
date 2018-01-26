@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">FavYourNeighbour</string>
+    <string name="user_name">Name</string>
+    <string name="user_password">Password</string>
+    <string name="BtnLogIn">SIGN IN</string>
+    <string name="SignUpLbl">Don\´t have an account. Sign up</string>
+    <string name="lblEmpresa"> FAVYOR NEIGHBOUR </string>
+</resources>

@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.danielsanso.favyourneighbour12.Main"
+    android:orientation="vertical">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/idlinearlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/text_appereance"
+            android:layout_margin="7dp"
+            android:clickable="true"
+            >
+
+
+            <LinearLayout
+                android:layout_width="278dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:orientation="vertical"
+                android:layout_alignLeft="@+id/imageView">
+
+                <TextView
+                    android:id="@+id/txtcomunidad"
+                    android:layout_width="177dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Comunidad"
+                    android:textColor="#62606c" />
+
+                <TextView
+                    android:id="@+id/txtnombrecompleto"
+                    android:layout_width="177dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="3dp"
+                    android:text="Nombre completo"
+                    android:textColor="@android:color/darker_gray"
+                    android:layout_marginBottom="10dp"/>
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView"
+                style="circular"
+                android:layout_width="61dp"
+                android:layout_height="32dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="12dp"
+                android:layout_weight="1"
+
+                app:srcCompat="@drawable/ic_persongirl" />
+
+        </LinearLayout>
+
+        <ListView
+
+            android:padding="5dp"
+            android:id="@+id/lstDatosFavores"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:divider="@color/dividerColor"
+            android:background="@drawable/text_appereance"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/idlinearlayout">
+
+        </ListView>
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/floatingActionButtton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:backgroundTint="@color/colorAccent"
+            android:clickable="true"
+            app:fabSize="normal"
+            app:srcCompat="@drawable/ic_action_name"
+            android:layout_marginEnd="21dp"
+            android:layout_marginBottom="19dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignEnd="@+id/lstDatosFavores" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="bottom|end"
+            android:orientation="vertical"
+            android:layout_above="@+id/floatingActionButtton"
+            android:layout_alignEnd="@+id/floatingActionButtton">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/FloatLblPedirFavor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="9dp"
+                    android:layout_marginTop="12dp"
+                    android:text="Pedir un favor"
+                    android:background="@drawable/backfloatlbl"
+                    android:textColor="@color/colorLight2"
+                    android:padding="2.5dp"/>
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/floatingActionButtton1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/floatingActionButtton"
+                    android:layout_alignEnd="@+id/floatingActionButtton"
+                    android:layout_gravity="bottom|end"
+                    android:layout_marginBottom="14dp"
+                    android:backgroundTint="@color/colorAccent"
+                    android:clickable="true"
+
+                    android:src="@drawable/ic_lock"
+                    android:visibility="visible" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/FloatLblInformarAveria"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="9dp"
+                    android:layout_marginTop="12dp"
+                    android:text="Informar Averia"
+                    android:background="@drawable/backfloatlbl"
+                    android:textColor="@color/colorLight2"
+                    android:padding="2.5dp"/>
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/floatingActionButtton2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/floatingActionButtton1"
+                    android:layout_alignStart="@+id/floatingActionButtton1"
+                    android:layout_gravity="bottom|end"
+                    android:layout_marginBottom="15dp"
+                    android:backgroundTint="@color/colorAccent"
+                    android:clickable="true"
+                    android:src="@drawable/ic_person"
+                    android:visibility="visible"
+                    app:fabSize="mini" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/FloatLblReservaIns"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="9dp"
+                    android:layout_marginTop="12dp"
+                    android:text="Reserva Instalacion"
+                    android:background="@drawable/backfloatlbl"
+                    android:textColor="@color/colorLight2"
+                    android:padding="2.5dp"/>
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/floatingActionButtton3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/floatingActionButtton2"
+                    android:layout_alignStart="@+id/floatingActionButtton2"
+                    android:layout_gravity="bottom|end"
+                    android:layout_marginBottom="15dp"
+                    android:backgroundTint="@color/colorAccent"
+                    android:clickable="true"
+                    android:src="@drawable/ic_addperson"
+                    android:visibility="visible"
+                    app:fabSize="mini" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
+
+
+
+
+</android.support.v7.widget.LinearLayoutCompat>
